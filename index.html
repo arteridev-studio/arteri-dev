@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arteri.dev | Link in Bio</title>
+    <style>
+        /* CSS Variables untuk konsistensi warna Arteri */
+        :root {
+            --bg-color: #0b101e;
+            --text-main: #ffffff;
+            --text-muted: #a0aec0;
+            --neon-blue: #00f3ff;
+            --neon-purple: #8b5cf6;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: radial-gradient(circle at 50% -20%, #1e293b, #0b101e);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Styling Foto Profil / Logo */
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
+            margin-bottom: 15px;
+            object-fit: cover;
+            background-color: #000; /* Antisipasi jika logo transparan */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 8px;
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+
+        /* Styling Tombol Standar */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: var(--text-main);
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background: rgba(0, 243, 255, 0.1);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Styling Tombol Call-To-Action (Konsultasi WA) */
+        .btn.primary {
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+            border: none;
+            color: #000; /* Teks gelap agar kontras dengan background terang */
+            font-weight: 700;
+        }
+
+        .btn.primary:hover {
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+            color: #fff;
+        }
+
+        /* Footer kecil */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Ganti 'logo-arteri.png' dengan nama file logo Anda -->
+        <img src="logo-arteri.jpeg" alt="Arteri Logo" class="profile-pic">
+        
+        <h1>@arteri.dev</h1>
+        <p>Web | AI | AR | Custom Apps<br>⚡ Solusi Digital Anti-Mainstream ⚡</p>
+
+        <div class="links">
+            <!-- Ganti nomor 628... dengan nomor WA bisnis Anda -->
+            <a href="https://wa.me/6281234567890" target="_blank" class="btn primary">💬 Konsultasi Gratis (WhatsApp)</a>
+            
+            <!-- Masukkan link website portofolio Anda -->
+            <a href="https://link-ke-web-hotel.com" target="_blank" class="btn">🏨 Portofolio: Bukit Menjangan Hotel</a>
+            <a href="https://link-ke-web-rental.com" target="_blank" class="btn">🚘 Portofolio: Mahkota Auto Rent</a>
+            
+            <!-- Link ke Sosmed -->
+            <a href="https://instagram.com/arteri.dev" target="_blank" class="btn">Instagram</a>
+            <a href="https://tiktok.com/@arteri.dev" target="_blank" class="btn">TikTok</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Arteri Web & App Development
+        </div>
+    </div>
+
+</body>
+</html>

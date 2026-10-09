@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arteri.dev | Projects Studio</title>
+    <title>Arteri-Dev | Projects Studio</title>
     <style>
         /* CSS Variables untuk konsistensi warna Arteri */
         :root {
@@ -43,7 +43,7 @@
             box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
             margin-bottom: 15px;
             object-fit: cover;
-            background-color: #000; /* Antisipasi jika logo transparan */
+            background-color: #000;
         }
 
         h1 {
@@ -57,8 +57,24 @@
             color: var(--text-muted);
             font-size: 0.95rem;
             margin-top: 8px;
-            margin-bottom: 35px;
+            margin-bottom: 25px;
             line-height: 1.5;
+        }
+
+        /* Styling Grup Kategori Tombol */
+        .link-group {
+            margin-bottom: 30px;
+            text-align: left; /* Teks judul rata kiri agar rapi */
+        }
+
+        .link-group h3 {
+            font-size: 0.95rem;
+            color: var(--neon-blue);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(0, 243, 255, 0.2);
+            padding-bottom: 6px;
         }
 
         /* Styling Tombol Standar */
@@ -66,7 +82,7 @@
             display: block;
             width: 100%;
             padding: 16px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             text-decoration: none;
             color: var(--text-main);
             background: var(--card-bg);
@@ -76,6 +92,7 @@
             box-sizing: border-box;
             font-weight: 500;
             letter-spacing: 0.5px;
+            text-align: center; /* Teks tombol rata tengah */
         }
 
         .btn:hover {
@@ -89,8 +106,9 @@
         .btn.primary {
             background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
             border: none;
-            color: #000; /* Teks gelap agar kontras dengan background terang */
+            color: #000;
             font-weight: 700;
+            margin-bottom: 35px; /* Jarak lebih jauh dari tombol WA ke grup pertama */
         }
 
         .btn.primary:hover {
@@ -109,23 +127,39 @@
 <body>
 
     <div class="container">
-        <!-- Ganti 'logo-arteri.png' dengan nama file logo Anda -->
+        <!-- Logo Arteri -->
         <img src="logo-arteri.jpeg" alt="Arteri Logo" class="profile-pic">
         
         <h1>@arteri.dev</h1>
         <p>Web | AI | AR | Custom Apps<br>⚡ Solusi Digital Anti-Mainstream ⚡</p>
 
         <div class="links">
-            <!-- Ganti nomor 628... dengan nomor WA bisnis Anda -->
+            <!-- Tombol Utama / Call to Action -->
             <a href="https://wa.me/6289529211234" target="_blank" class="btn primary">💬 Konsultasi Gratis (WhatsApp)</a>
             
-            <!-- Masukkan link website portofolio Anda -->
-            <a href="https://bukitmenjangan-hotel.rf.gd/" target="_blank" class="btn">🏨 Portofolio: Bukit Menjangan Hotel</a>
-            <a href="https://https://mahkota-autorent.ct.ws/" target="_blank" class="btn">🚘 Portofolio: Mahkota Auto Rent</a>
+            <!-- Grup 1: Portofolio Website -->
+            <div class="link-group">
+                <h3>💻 Portofolio Website</h3>
+                <a href="https://bukitmenjangan-hotel.rf.gd" target="_blank" class="btn">🏨 Bukit Menjangan Hotel</a>
+                <a href="https://mahkota-autorent.ct.ws" target="_blank" class="btn">🚘 PT. Mahkota Auto Rent</a>
+            </div>
+
+            <!-- Grup 2: Portofolio Dashboard Data -->
+            <div class="link-group">
+                <h3>📊 Portofolio Dashboard Data</h3>
+                <!-- Ganti tanda # dengan link asli ke dashboard Anda -->
+                <a href="https://datastudio.google.com/reporting/0e7aa981-377e-4bea-b985-948cd4011b14" target="_blank" class="btn">📈 Ekspor Kopi Januari 2024 - April 2026</a>
+                <a href="https://datastudio.google.com/reporting/ecd09835-1443-4e40-9980-3af140b40f28" target="_blank" class="btn">📉 Laporan Penjualan Tahun 2025</a>
+				<a href="https://datastudio.google.com/reporting/20678634-f0b5-438b-a01c-b4bdf034788b" target="_blank" class="btn">📉 Kinerja Bank Perkreditan Rakyat (filter interaktif)</a>
+            </div>
             
-            <!-- Link ke Sosmed -->
-            <a href="https://instagram.com/arteri.dev" target="_blank" class="btn">Instagram</a>
-            <a href="https://tiktok.com/@arteri.dev" target="_blank" class="btn">TikTok</a>
+            <!-- Grup 3: Media Sosial -->
+            <div class="link-group">
+                <h3>📱 Temukan Kami</h3>
+                <a href="https://instagram.com/arteri.dev" target="_blank" class="btn">Instagram</a>
+                <a href="https://tiktok.com/@arteri.dev" target="_blank" class="btn">TikTok</a>
+                <a href="https://facebook.com/arteri.dev" target="_blank" class="btn">Facebook</a>
+            </div>
         </div>
 
         <div class="footer">
